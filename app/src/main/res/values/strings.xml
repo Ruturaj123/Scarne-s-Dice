@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Scarne\'s Dice - WorkShop 1</string>
+  <string name="your_score">Your Score:</string>
+  <string name="computer_score">Computer Score:</string>
+</resources>

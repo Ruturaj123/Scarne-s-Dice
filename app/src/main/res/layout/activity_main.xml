@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.ruturaj.scarnesdice_workshop1.MainActivity">
+
+  <LinearLayout
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_marginTop="4dp"
+    android:padding="4dp">
+
+    <TextView
+      android:id="@+id/your_score_text_view"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/your_score"
+      android:layout_weight="1"
+      android:textSize="18sp"
+      android:textStyle="bold"/>
+
+    <TextView
+      android:id="@+id/computer_score_text_view"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/computer_score"
+      android:layout_weight="1"
+      android:textSize="18sp"
+      android:textStyle="bold"/>
+
+  </LinearLayout>
+
+  <ImageView
+    android:id="@+id/dice_image_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="56dp"
+    android:src="@drawable/dice1"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_below="@id/dice_image_view"
+    android:layout_marginTop="20dp">
+
+    <Button
+      android:id="@+id/roll_button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Roll"
+      style="@style/Widget.AppCompat.Button.Colored"
+      android:layout_margin="8dp"
+      android:onClick="rollADice"/>
+
+    <Button
+      android:id="@+id/hold_button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Hold"
+      style="@style/Widget.AppCompat.Button.Colored"
+      android:layout_margin="8dp"
+      android:onClick="holdTheScore"/>
+
+    <Button
+      android:id="@+id/reset_button"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Reset"
+      style="@style/Widget.AppCompat.Button.Colored"
+      android:layout_margin="8dp"
+      android:onClick="resetTheScore"/>
+
+  </LinearLayout>
+
+</RelativeLayout>
